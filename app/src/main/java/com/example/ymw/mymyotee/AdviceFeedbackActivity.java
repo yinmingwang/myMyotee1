@@ -27,6 +27,8 @@ public class AdviceFeedbackActivity extends Activity {
             @Override
             public void onClick(View v) {
                 feedbcakbutton1.setBackgroundColor(getResources().getColor(R.color.skyblue));
+                //Intent intent = new Intent(AdviceFeedbackActivity.this,MainActivity.class);
+                //startActivity(intent);
                 finish();
             }
         });

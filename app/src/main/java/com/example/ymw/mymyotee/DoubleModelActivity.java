@@ -35,8 +35,6 @@ public class DoubleModelActivity extends Activity {
         doubleimagebutton0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DoubleModelActivity.this,MainActivity.class);
-                startActivity(intent);
                 finish();
             }
         });
@@ -62,7 +60,6 @@ public class DoubleModelActivity extends Activity {
             @Override
             public void onClick(View v) {
                 doubleimagebutton3.setImageResource(dib3[++dib3count % dib3.length]);
-
             }
         });
     }
