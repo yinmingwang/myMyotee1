@@ -20,6 +20,8 @@
         <activity android:name=".DoubleModelActivity"></activity>
         <activity android:name=".HistoryActivity"></activity>
         <activity android:name=".AdviceFeedbackActivity"></activity>
+        <activity android:name=".ManActivity"></activity>
+        <activity android:name=".WomanActivity"></activity>
     </application>
 
 </manifest>

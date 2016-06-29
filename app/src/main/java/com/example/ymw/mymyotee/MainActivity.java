@@ -11,9 +11,10 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
-
+    private  String savefeed;
     private boolean isVoice = true;
     private int img1count = 0;
     private int img2count = 0;
@@ -103,6 +104,8 @@ public class MainActivity extends Activity {
                     MediaPlayer mPlayer = MediaPlayer.create(MainActivity.this, R.raw.boy);
                     mPlayer.start();
                 }
+                Intent intent = new Intent(MainActivity.this,ManActivity.class);
+                startActivity(intent);
             }
         });
         final ImageButton imgbutton5 = (ImageButton) findViewById(R.id.imagebutton5);
@@ -115,6 +118,8 @@ public class MainActivity extends Activity {
                     MediaPlayer mPlayer = MediaPlayer.create(MainActivity.this,R.raw.girl);
                     mPlayer.start();
                 }
+                Intent intent = new Intent(MainActivity.this,WomanActivity.class);
+                startActivity(intent);
             }
         });
         final ImageButton imgbutton6 = (ImageButton) findViewById(R.id.imagebutton6);
